@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Food Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Food Website" name="keywords">
+    <meta content="Food Website" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">World of <span>Pizza</span></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="booking.html" class="nav-item nav-link active">Order</a>
+                    <a href="single.html" class="nav-item nav-link">Blog</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="page-header mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Order Your Pizza</h2>
+                </div>
+                <div class="col-12">
+                    <a href="index.html">Home</a>
+                    <a href="booking.html">Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Order Start -->
+    <div class="booking">
+        <div class="container">
+            <div class="booking-form">
+                <form action="">
+                    <div class="control-group">
+                        <div class="input-group">
+                            <select class="custom-select form-control name">
+                                <option value="Cheese Pizza">Cheese Pizza</option>
+                                <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                                <option value="Veggie Pizza">Veggie Pizza</option>
+                                <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
+                                <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+                            </select>
+                            <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="input-group">
+                            <select class="custom-select form-control" id="size">
+                                <option selected value="0">Size</option>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                            <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="input-group">
+                            <select class="custom-select form-control" id="crust">
+                                <option selected value="0">Crust</option>
+                                <option value="Cheese-Stuffed Crust">Cheese-Stuffed Crust</option>
+                                <option value="Thin Crust">Thin Crust</option>
+                                <option value="Sicilian Style">Sicilian Style</option>
+                                <option value="Neapolitan Crust">Neapolitan Crust</option>
+                                <option value="NY Style Pizza">NY Style Pizza</option>
+                            </select>
+                            <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="input-group">
+                            <select class="custom-select form-control" id="topping">
+                                <option selected value="0">Toppings</option>
+                                <option value="Mushrooms">Mushrooms</option>
+                                <option value="Onions">Onions</option>
+                                <option value="Sausage">Sausage</option>
+                                <option value="Bacon">Bacon</option>
+                                <option value="Black Olives">Black Olives</option>
+                                <option value="Green Peppers">Green Peppers</option>
+                                <option value="Spinach">Spinach</option>
+                                <option value="Extra Cheese">Extra Cheese</option>
+                            </select>
+                            <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn custom-btn orders" type="submit">Make Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Order End -->
+
+    <!--Display Order Start-->
+    <div class="order">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Order Details</p>
+                <h2>Your Order</h2>
+                <div id="your-orders">
+                    <table class="table table-sm pizzatable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Crust</th>
+                                <th scope="col">Topping</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ordersmade">
+                            <tr>
+                                <td id="pizzaname"></td>
+                                <td id="pizzasize"></td>
+                                <td id="pizzacrust"></td>
+                                <td id="pizzatopping"></td>
+                                <td id="totals"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p id="pizzatotal"></p>
+                    <p id="totalbill"></p>
+                    <p id="addedprice">Delivery cost is KSH150</p>
+                    <p id="finallmessage"></p>
+                </div>
+                <button class="btn custom-btn addPizza">Add Pizza</button>
+                <button class="btn custom-btn" id="purchase">Purchase</button>
+                <button class="btn custom-btn deliver">Delivery</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="delivery">
+        <div class="container">
+            <div class="delivery-form">
+                <form action="">
+                    <div class="control-group">
+                        <div class="input-group">
+                            <input type="text" id="name" placeholder="Name" class="custom-select form-control">
+                            <div class="input-group-append">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="input-group">
+                            <input type="number" id="phone" placeholder="Telephone Number"
+                                class="custom-select form-control">
+                            <div class="input-group-append">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="input-group">
+                            <input type="text" id="location" placeholder="Delivery Point"
+                                class="custom-select form-control">
+                            <div class="input-group-append">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn custom-btn" id="final-order">Place Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Display Order End-->
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright &copy; <a>World of Pizza</a>, All Right Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

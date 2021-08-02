@@ -223,8 +223,8 @@ $(document).ready(function () {
       $("button.deliver").hide();
       $("#pizzatotal").hide();
       let deliceryamount = checkoutTotal + 150;
-      console.log("You will pay sh. " + deliceryamount + " on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: " + deliceryamount);
+      console.log("You will pay KSH" + deliceryamount + " on delivery");
+      $("#totalbill").append("Your bill plus delivery fee KSH" + deliceryamount);
     });
 
     // when one clicks place order button
